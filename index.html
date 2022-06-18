@@ -86,6 +86,7 @@
         list.appendChild(dataNode);
         output.appendChild(list);
         input.value = "";
+        console.log(output);
       }
 
       // TODO: register event onclick / addEventListener untuk button
@@ -96,7 +97,7 @@
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
 
       input.addEventListener("keypress", (key) => {
-        if (key.keyCode === 13) {
+        if (key.key === "Enter") {
           fnClickHandler();
         }
       });
